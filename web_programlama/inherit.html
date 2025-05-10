@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inherit</title>
+    <style>
+        body {
+            /* linkler bunu miras almaz*/
+            color: cadetblue;
+        }
+
+        ul {
+            color: coral;
+        }
+
+        li {
+            color: yellowgreen;
+        }
+
+        a {
+            color: green;
+            /*color: inherit;*/
+            /*bir üst etiketten miras alır*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt deleniti modi consectetur consequatur officiis
+        quis pariatur suscipit voluptatibus non corrupti.</p>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt deleniti modi consectetur consequatur officiis
+        quis pariatur suscipit voluptatibus non corrupti.</p>
+
+    <a href="#" style="color: inherit;">link 1</a><!-- body kısmından miras alır -->
+    <a href="#">link 2</a>
+
+    <ul>
+        <li style="color: inherit;">madde 1</li>
+        <li>madde 2</li>
+        <li>madde 3</li>
+        <li>madde 4</li>
+        <li>madde 5</li>
+    </ul>
+</body>
+
+</html>

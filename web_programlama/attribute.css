@@ -1,0 +1,30 @@
+/* Group selectors
+(p) --> tüm p etiketleri
+
+(div p) --> div içindeki tüm p etiketleri 
+
+(div,p) --> tüm div ve p etiketleri 
+
+(p + div)p etiketlerinden sonra gelen div etiketleri
+*/
+
+h2[title= "baslik1"]{
+    color: blueviolet;
+}
+p[title="paragraf1"]{
+    color: chartreuse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    text-decoration: underline;
+}
+a[target="_blank"]{
+    color: deeppink;
+    border: 3px solid seagreen;
+}
+
+input[type="text"]{
+    color: rgb(255, 1, 1);
+    text-align: center;
+    font-style: italic;
+    background-color: rgb(117, 166, 168);
+}
