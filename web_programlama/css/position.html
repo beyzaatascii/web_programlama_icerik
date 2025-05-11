@@ -1,0 +1,77 @@
+<!-- nesnelerin birbirine göre konumlandırılması
+
+static 
+    div
+    div
+    div
+
+relative
+
+absolute (sayfa baslangıcından itibaren) 
+
+fixed (sayfa değişmesine rağmen belirlenen konumda kalır)
+
+sticky
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .kutu {
+            width: 150px;
+            height: 150px;
+
+        }
+
+        #kutu1 {
+            background-color: lightpink;
+            position: sticky;
+            top: 50px;
+            width: 100%;
+
+        }
+
+        #kutu2 {
+            background-color: lightgreen;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        #kutu3 {
+            background-color: lightblue;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ratione mollitia laborum soluta repudiandae, quod
+        eveniet natus odio dolor hic eos ab aspernatur iure dicta voluptatibus quam sequi aliquid itaque. Facilis libero
+        nisi sint molestias consectetur sunt, molestiae sit atque cupiditate aperiam? Consequuntur error quaerat
+        exercitationem asperiores labore nisi deserunt? Temporibus, quibusdam? Aliquam, veniam dicta, tempora earum quis
+        cupiditate nesciunt repellendus praesentium, magnam laudantium officiis! Vitae maiores corrupti earum culpa
+        tempora sint tenetur impedit qui quisquam repellat ullam quia, eligendi quis optio. Eius soluta, nisi, dolore
+        cupiditate asperiores quia totam quibusdam voluptatem fugit tenetur a molestiae commodi eligendi error impedit,
+        placeat vel expedita veniam! Doloremque cumque temporibus hic autem dicta nesciunt alias deserunt odio
+        cupiditate voluptates natus non enim, nam reprehenderit. Assumenda distinctio vero vel quasi voluptas sequi
+        animi, iure modi quas beatae aliquam iusto omnis sit porro ab rem velit ad aut, qui perspiciatis dolor illo.
+        Eveniet modi a facere totam nam delectus id debitis dolore, tempora corporis accusantium voluptas maxime
+        necessitatibus exercitationem nostrum, dolorum nisi rem ab fugiat nemo assumenda numquam natus nesciunt
+        voluptates? Natus, doloremque. Adipisci, harum ipsa praesentium mollitia libero in accusantium dignissimos.
+        Distinctio, minima maiores eum molestias quidem ratione soluta temporibus esse, ipsum enim autem?</p>
+    <div class="kutu" id="kutu1">kutu 1</div>
+    <div class="kutu" id="kutu2">kutu 2</div>
+    <div class="kutu" id="kutu3">kutu 3</div>
+    <div style="height: 3000px;"></div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!-- nesnelerin birbirine göre konumlandırılması
+
+static 
+    div
+    div
+    div
+
+relative
+
+absolute (sayfa baslangıcından itibaren) 
+
+fixed (sayfa değişmesine rağmen belirlenen konumda kalır)
+
+sticky
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        .kutu {
+
+            height: 150px;
+
+
+        }
+
+        #kutu1 {
+            background-color: lightpink;
+            /*padding: 100px;*/
+            padding-left: 50px;
+
+        }
+
+        #kutu2 {
+            background-color: lightgreen;
+            padding-top: 50px;
+        }
+
+        #kutu3 {
+            background-color: lightblue;
+            padding: 50px 100px 150px 200px;
+
+        }
+
+        span {
+            background-color: aquamarine;
+            display: inline-block;
+            width: 200px;
+            padding: 50px;
+            margin: 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kutu" id="kutu1">kutu 1</div>
+    <div class="kutu" id="kutu2">kutu 2</div>
+    <div class="kutu" id="kutu3">kutu 3</div>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+    <span>Lorem ipsum dolor sit.</span>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, pariatur.</span>
+
+</body>
+
+</html>

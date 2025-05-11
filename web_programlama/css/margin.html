@@ -1,0 +1,73 @@
+<!-- nesnelerin birbirine göre konumlandırılması
+
+static 
+    div
+    div
+    div
+
+relative
+
+absolute (sayfa baslangıcından itibaren) 
+
+fixed (sayfa değişmesine rağmen belirlenen konumda kalır)
+
+sticky
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        /*body{
+            margin: 20px;
+        }*/
+        .kutu {
+            width: 150px;
+            height: 150px;
+            /*display: inline-block;*/
+
+        }
+
+        #kutu1 {
+            background-color: lightpink;
+            /* margin: 50px 100px 150px 200px;*/
+
+
+        }
+
+        #kutu2 {
+            background-color: lightgreen;
+            margin: auto;
+        }
+
+        #kutu3 {
+            background-color: lightblue;
+
+
+        }
+
+        span {
+            margin: 50px;
+            display: inline-block;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kutu" id="kutu1">kutu 1</div>
+    <div class="kutu" id="kutu2">kutu 2</div>
+    <div class="kutu" id="kutu3">kutu 3</div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+
+</body>
+
+</html>

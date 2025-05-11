@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        div {
+            width: 400px;
+            /* inline olarak verilen ögelerin genişlik ve yüksekliği sabit kalır değiştirilemez*/
+            height: 100px;
+            background-color: lightblue;
+            margin: 5px;
+            /* display: inline; */
+            display: inline-block;
+            /* block özelliği alıp yan yana gelir*/
+            /* display: none;*/
+            /*görünmez hale geldi , tercih edilmez, java script*/
+            text-align: center;
+
+        }
+
+        #kutu1 {
+            background-color: aqua;
+            display: none;
+        }
+
+        a {
+            display: block;
+            width: 50%;
+            background-color: bisque;
+            margin: 3px;
+
+        }
+
+        span {
+            display: block;
+            width: 50%;
+            background-color: bisque;
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div block olduğu için alt alta gelirler-->
+    <div id="kutu1">
+        kutu 1
+    </div>
+    <div id="kutu2">
+        kutu 2
+    </div>
+
+    <br><br><br><br><br>
+
+    <!-- a inline olduğu için yan yana gelirler-->
+    <a href="#">link 1</a>
+    <a href="#">link 2</a>
+    <a href="#">link 3</a>
+
+    <br><br><br><br><br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, delectus?</span>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quae?</span>
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, earum.</span>
+</body>
+
+</html>
